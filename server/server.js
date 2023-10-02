@@ -17,6 +17,10 @@ const db = mysql.createConnection({
     database: "customer_sign_up"
 })
 
+app.post('/register', (req, res) => {
+    const sql = "insert into login (`name`, `email`, `password`) values (?) ";
+})
+
 app.listen(8081, () => {
     console.log("Running...");
 }) 
