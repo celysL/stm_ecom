@@ -15,7 +15,7 @@ function Register(){
         event.preventDefault();
         axios.post('http://localhost:8081/register', values)
         .then(res => console.log(res))
-        .then(err => console.log(err));
+        .catch(err => console.log(err));
     }
 
     return(
